@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/child_layout_comment_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/post_detail_comment_header_height">
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="0.7dp"
+            android:background="@color/disable_text"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/img_dot"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/posting_tagbox"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <kr.co.easterbunny.wonderple.view.CustomTextView
+            android:id="@+id/tv_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="14dp"
+            android:text="@string/str_post_detail_comment_count"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:customFont="Roboto-Medium"
+            app:layout_constraintLeft_toRightOf="@+id/img_dot"
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/btn_top"-->
+            <!--android:layout_width="@dimen/post_detail_btn_top_width"-->
+            <!--android:layout_height="@dimen/post_detail_btn_top_height"-->
+            <!--android:layout_marginRight="16dp"-->
+            <!--android:layout_marginTop="10dp"-->
+            <!--android:background="@drawable/floating"-->
+            <!--app:layout_constraintRight_toRightOf="parent"-->
+            <!--app:layout_constraintTop_toTopOf="parent" />-->
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable name="commentReportDelete" type="kr.co.easterbunny.wonderple.dialog.CommentReportDeleteDialog"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="@dimen/dlg_follow_report_width"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/dlg_follow_report_width"
+        android:minHeight="@dimen/dlg_follow_report_height"
+        android:orientation="vertical">
+
+        <kr.co.easterbunny.wonderple.view.CustomTextView
+            android:id="@+id/btn_report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/str_report"
+            android:textColor="@color/btn_tv_color"
+            android:textSize="16sp"
+            app:customFont="Roboto-Medium"/>
+
+        <kr.co.easterbunny.wonderple.view.CustomTextView
+            android:id="@+id/btn_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="22dp"
+            android:text="@string/str_delete"
+            android:textColor="@color/btn_tv_color"
+            android:textSize="16sp"
+            app:customFont="Roboto-Medium"/>
+
+
+    </LinearLayout>
+</layout>

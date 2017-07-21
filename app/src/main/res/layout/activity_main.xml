@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+        <variable name="switchContent" type="kr.co.easterbunny.wonderple.activity.MainActivity"/>
+    </data>
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        tools:context="kr.co.easterbunny.wonderple.activity.MainActivity">
+
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:name="kr.co.easterbunny.wonderple.fragment.HomeFragment"
+                android:id="@+id/fragment_home"
+                android:layout_gravity="center"
+                tools:layout="@layout/fragment_home" />
+
+
+        </FrameLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimaryDark"
+            android:layout_gravity="bottom"
+            android:id="@+id/linearLayout"
+            app:layout_behavior="kr.co.easterbunny.wonderple.library.util.ui.QuickReturnFooterBehavior">
+
+            <FrameLayout
+                android:id="@+id/btn_home"
+                android:onClick="@{switchContent.bottomBtnClick}"
+                style="@style/MainButton"></FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/btn_search"
+                android:onClick="@{switchContent.bottomBtnClick}"
+                style="@style/MainButton"></FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/btn_camera"
+                android:onClick="@{switchContent.bottomBtnClick}"
+                style="@style/MainButton"></FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/btn_news"
+                android:onClick="@{switchContent.bottomBtnClick}"
+                style="@style/MainButton"></FrameLayout>
+
+
+            <FrameLayout
+                android:id="@+id/btn_my_page"
+                android:onClick="@{switchContent.bottomBtnClick}"
+                style="@style/MainButton"></FrameLayout>
+
+
+        </LinearLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</layout>
+

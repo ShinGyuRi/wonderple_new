@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#D2D2D2</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="dark_chocolate">#2E2B25</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white_60">#99FFFFFF</color>
+    <color name="black">#000000</color>
+
+
+    <color name="guideline">#4DFFFFFF</color>
+
+    <color name="light_cream">#E6E3E0</color>
+
+
+    <color name="red_error">#C86A6A</color>
+    <color name="egg_shell">#EFEEED</color>
+
+    <color name="text_hint">#696969</color>
+    <color name="before_day">#585858</color>
+    <color name="text_policy_event">#1E419B</color>
+    <color name="link">#3F51B5</color>
+    <color name="selected_text">#6B6B6B</color>
+    <color name="disable_text">#DBDBDB</color>
+    <color name="warning">#FF2302</color>
+    <color name="post_delete">#FB0009</color>
+    <color name="text_pre_comment">#D2D2D2</color>
+    <color name="text_realname">#585858</color>
+
+    <color name="mentions_default_color">#f16421</color>
+
+    <color name="tag_color_1">#E6E6E7</color>
+    <color name="tag_color_2">#ECB9C8</color>
+    <color name="tag_color_3">#E29C1d</color>
+    <color name="tag_color_4">#FFB1B1</color>
+    <color name="tag_color_5">#FF3700</color>
+    <color name="tag_color_6">#C07F44</color>
+    <color name="tag_color_7">#FFFDBE</color>
+    <color name="tag_color_8">#7F7F00</color>
+    <color name="tag_color_9">#BCDEE8</color>
+    <color name="tag_color_10">#AEB0B3</color>
+    <color name="tag_color_11">#F17BB1</color>
+    <color name="tag_color_12">#FAA76D</color>
+    <color name="tag_color_13">#FF927F</color>
+    <color name="tag_color_14">#CD0050</color>
+    <color name="tag_color_15">#A47244</color>
+    <color name="tag_color_16">#FFEC72</color>
+    <color name="tag_color_17">#849570</color>
+    <color name="tag_color_18">#92D3CE</color>
+    <color name="tag_color_19">#AFB0A7</color>
+    <color name="tag_color_20">#D162A3</color>
+    <color name="tag_color_21">#FF8B1D</color>
+    <color name="tag_color_22">#FF7E7E</color>
+    <color name="tag_color_23">#B50808</color>
+    <color name="tag_color_24">#BB602A</color>
+    <color name="tag_color_25">#EEC91A</color>
+    <color name="tag_color_26">#395D57</color>
+    <color name="tag_color_27">#0B5994</color>
+    <color name="tag_color_28">#000000</color>
+    <color name="tag_color_29">#F44785</color>
+    <color name="tag_color_30">#F36E54</color>
+    <color name="tag_color_31">#C46381</color>
+    <color name="tag_color_32">#743427</color>
+    <color name="tag_color_33">#85614E</color>
+
+    <color name="item_talk_color_1">#e6ff6969</color>
+    <color name="item_talk_color_2">#e63bbbe1</color>
+    <color name="item_talk_color_3">#e650c7ae</color>
+    <color name="item_talk_color_4">#e6ae91ff</color>
+    <color name="item_talk_color_5">#e6ffc142</color>
+
+    <integer-array name="item_talk_color">
+        <item>@color/item_talk_color_1</item>
+        <item>@color/item_talk_color_2</item>
+        <item>@color/item_talk_color_3</item>
+        <item>@color/item_talk_color_4</item>
+        <item>@color/item_talk_color_5</item>
+    </integer-array>
+
+</resources>

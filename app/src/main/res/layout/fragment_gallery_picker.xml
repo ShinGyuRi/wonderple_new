@@ -1,0 +1,52 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/mAppBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                android:minHeight="50dp"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <kr.co.easterbunny.wonderple.view.CropImageView
+                    android:id="@+id/mPreview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"/>
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <kr.co.easterbunny.wonderple.view.CustomTextView
+            android:id="@+id/mMediaNotFoundWording"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:gravity="center_horizontal"
+            android:textSize="18sp"
+            android:text="@string/gallery_no_media_found"
+            android:visibility="gone"
+            app:customFont="Roboto-Regular"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</layout>

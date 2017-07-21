@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="upload"
+            type="kr.co.easterbunny.wonderple.activity.UploadActivity"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="164dp">
+
+            <View
+                android:id="@+id/view6"
+                android:layout_width="0dp"
+                android:layout_height="118dp"
+                android:layout_marginTop="46dp"
+                android:background="@color/white"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_post"
+                android:layout_width="80dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="9dp"
+                app:layout_constraintLeft_toLeftOf="@+id/view6"
+                app:layout_constraintTop_toBottomOf="@+id/imageView15" />
+
+            <View
+                android:id="@+id/view7"
+                android:layout_width="1dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginStart="10dp"
+                android:background="@color/disable_text"
+                app:layout_constraintLeft_toRightOf="@+id/img_post"
+                app:layout_constraintTop_toTopOf="@+id/img_post" />
+
+            <View
+                android:id="@+id/view8"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="@color/disable_text"
+                app:layout_constraintBottom_toBottomOf="@+id/view6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent" />
+
+            <com.apradanas.simplelinkabletext.LinkableEditText
+                android:id="@+id/et_desc"
+                android:layout_width="228dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_edit_common"
+                android:layout_marginLeft="21dp"
+                android:layout_marginStart="21dp"
+                android:hint="게시물 소개 작성"
+                android:lineSpacingExtra="2.7sp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/disable_text"
+                android:textSize="14sp"
+                app:layout_constraintLeft_toLeftOf="@+id/view7"
+                app:layout_constraintTop_toTopOf="@+id/img_post" />
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:background="@drawable/app_bar_bg"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="44dp"
+                android:layout_height="44dp"
+                android:background="@drawable/posting_x"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="새게시물" />
+
+            <TextView
+                android:id="@+id/tv_complete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:textColor="@color/btn_tv_color"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="완료"
+                android:onClick="@{upload.onClick}"/>
+
+        </android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                tools:context="kr.co.easterbunny.wonderple.activity.UploadActivity">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/disable_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view10"
+                    android:layout_width="0dp"
+                    android:layout_height="155dp"
+                    android:background="@color/white"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="-0.02"
+                    android:text="아이템 TAG"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view10" />
+
+                <View
+                    android:id="@+id/view11"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/disable_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+                <kr.co.easterbunny.wonderple.library.util.ui.JinViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="0dp"
+                    android:layout_height="86dp"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tabLayout"></kr.co.easterbunny.wonderple.library.util.ui.JinViewPager>
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintLeft_toLeftOf="@+id/view10"
+                    app:layout_constraintRight_toRightOf="@+id/view10"
+                    app:layout_constraintTop_toBottomOf="@+id/view11"
+                    app:tabMode="scrollable"></android.support.design.widget.TabLayout>
+
+                <View
+                    android:id="@+id/view12"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:background="@color/disable_text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view10" />
+
+                <View
+                    android:id="@+id/view13"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/disable_text"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view12" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/view13">
+
+                    <RelativeLayout
+                        android:id="@+id/btn_expand"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:gravity="center">
+
+                        <View
+                            android:id="@+id/btn_tag_color_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/makeupcolor_n" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:letterSpacing="-0.02"
+                        android:text="나의 메이크업 색상 TAG"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:id="@+id/el_tag_color"
+                        android:layout_width="match_parent"
+                        android:layout_height="162dp"
+                        android:layout_below="@id/textView1"
+                        android:orientation="vertical"
+                        app:ael_duration="400"
+                        app:ael_expanded="false">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_1" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_2" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_3" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_4" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_5" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_6" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_7" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_8" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_9" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_10" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_11" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_12" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_13" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_14" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_15" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_16" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_17" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_18" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_19" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_20" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_21" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_22" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_23" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_24" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_25"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_25" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_26"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_26" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_27"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_27" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_28"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_28" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_29"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_29" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_30"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_30" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="12dp"
+                                android:layout_marginTop="8dp"
+                                android:orientation="vertical">
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_31"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_31" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_32"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="12dp"
+                                    android:button="@drawable/color_theme_32" />
+
+                                <CheckBox
+                                    android:id="@+id/btn_color_33"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:button="@drawable/color_theme_33" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginTop="6dp"
+                    android:background="@color/white"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="7dp">
+
+                        <View
+                            android:id="@+id/btn_tag_theme_menu"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/makeupcolor_n" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:fontFamily="sans-serif-medium"
+                            android:letterSpacing="-0.02"
+                            android:text="내 사진에 추억 입히기"
+                            android:textColor="@color/black"
+                            android:textSize="14sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingExtra="2.3sp"
+                            android:text="나의 모습을 특별하게 추억할 기회를 놓치지 마세요."
+                            android:textColor="#6B6B6B"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <com.github.aakira.expandablelayout.ExpandableLinearLayout
+                        android:id="@+id/el_tag_theme"
+                        android:layout_width="match_parent"
+                        android:layout_height="362dp"
+                        android:layout_below="@id/linearLayout"
+                        android:orientation="vertical"
+                        app:ael_duration="400"
+                        app:ael_expanded="false">
+
+                        <kr.co.easterbunny.wonderple.library.util.ui.JinRadioGroup
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <android.support.constraint.ConstraintLayout
+                                android:id="@+id/layout_contest"
+                                android:layout_width="match_parent"
+                                android:layout_height="66dp"
+                                android:background="#F6F6F6">
+
+                                <TextView
+                                    android:id="@+id/textView3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="sans-serif"
+                                    android:lineSpacingExtra="2.3sp"
+                                    android:text="최고의 원더플을 선정중인 추억 테마에요!"
+                                    android:textColor="@color/black"
+                                    android:textSize="12sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="8dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="1sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="10.7sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton1"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton1"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton1"
+                                    android:text="봄:\n꽃놀이" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="1sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="10.7sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton2"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton2"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton2"
+                                    android:text="기념일:\n발렌타인데이" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="8dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="1sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="10.7sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton3"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton3"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton3"
+                                    android:text="웨딩:\n5월의신부" />
+
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton4"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton4"
+                                    android:text="봄"
+                                    app:layout_constraintHorizontal_bias="0.521"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton4"
+                                    android:layout_marginTop="8dp" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton5"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton5"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton5"
+                                    android:text="일상" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton6"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton6"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton6"
+                                    android:text="데이트"
+                                    android:layout_marginLeft="8dp" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_7"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton7"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton7"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton7"
+                                    android:text="회사생활" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_8"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton8"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton8"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton8"
+                                    android:text="대학생활" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_9"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton9"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton9"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton9"
+                                    android:text="기념일" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_10"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton10"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton10"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton10"
+                                    android:text="면접" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_11"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton11"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton11"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton11"
+                                    android:text="졸업" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton12"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton12"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton12"
+                                    android:text="승무원" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_13"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton13"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton13"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton13"
+                                    android:text="고등학생" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton14"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton14"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton14"
+                                    android:text="여행" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_15"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton15"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton15"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton15"
+                                    android:text="웨딩" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+
+                                    android:id="@+id/tv_tag_theme_16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton16"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton16"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton16"
+                                    android:text="결혼식하객" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_17"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton17"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton17"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton17"
+                                    android:text="아이엄마" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_18"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton18"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton18"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton18"
+                                    android:text="스포츠" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_19"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton19"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton19"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton19"
+                                    android:text="패션" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_20"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton20"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton20"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton20"
+                                    android:text="파티" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_21"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton21"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton21"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton21"
+                                    android:text="가족" />
+                            </android.support.constraint.ConstraintLayout>
+
+                            <android.support.constraint.ConstraintLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="8dp"
+                                android:background="@color/white"
+                                android:orientation="horizontal">
+
+                                <RadioButton
+                                    android:id="@+id/radioButton22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_22"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton22"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton22"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton22"
+                                    android:text="여름" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintLeft_toLeftOf="parent"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_23"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton23"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton23"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton23"
+                                    android:text="가을" />
+
+                                <RadioButton
+                                    android:id="@+id/radioButton24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="18dp"
+                                    android:layout_marginTop="0dp"
+                                    android:button="@drawable/btn_theme"
+                                    app:layout_constraintRight_toRightOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <TextView
+                                    android:id="@+id/tv_tag_theme_24"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_marginTop="8dp"
+                                    android:fontFamily="sans-serif"
+                                    android:gravity="center_horizontal"
+                                    android:lineSpacingExtra="2.7sp"
+                                    android:textColor="#000000"
+                                    android:textSize="14sp"
+                                    android:textStyle="normal"
+                                    app:layout_constraintLeft_toLeftOf="@+id/radioButton24"
+                                    app:layout_constraintRight_toRightOf="@+id/radioButton24"
+                                    app:layout_constraintTop_toTopOf="@+id/radioButton24"
+                                    android:text="겨울" />
+                            </android.support.constraint.ConstraintLayout>
+                        </kr.co.easterbunny.wonderple.library.util.ui.JinRadioGroup>
+
+
+                    </com.github.aakira.expandablelayout.ExpandableLinearLayout>
+
+                </RelativeLayout>
+
+
+            </android.support.constraint.ConstraintLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</layout>

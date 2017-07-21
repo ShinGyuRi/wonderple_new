@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="commentReport"
+            type="kr.co.easterbunny.wonderple.dialog.CommentReportDialog" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="@dimen/dlg_follow_report_width"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minWidth="@dimen/dlg_follow_report_width"
+        android:orientation="vertical">
+
+        <kr.co.easterbunny.wonderple.view.CustomTextView
+            android:id="@+id/customTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="22dp"
+            android:text="@string/str_comment_report"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            app:customFont="Roboto-Medium"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="34dp"
+            android:orientation="horizontal"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customTextView2">
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/option1"
+                style="@style/BlackMedium16"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_report_option_1" />
+
+            <RadioButton
+                android:id="@+id/img_option1"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:button="@drawable/btn_set_off" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option1">
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/option2"
+                style="@style/BlackMedium16"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_comment_report_option2" />
+
+            <RadioButton
+                android:id="@+id/img_option2"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:button="@drawable/btn_set_off" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option2">
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/option3"
+                style="@style/BlackMedium16"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_report_option_4" />
+
+            <RadioButton
+                android:id="@+id/img_option3"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:button="@drawable/btn_set_off" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option3">
+
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/option4"
+                style="@style/BlackMedium16"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_report_option_5" />
+
+            <RadioButton
+                android:id="@+id/img_option4"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:button="@drawable/btn_set_off" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option4">
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/option5"
+                style="@style/BlackMedium16"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_report_option_6" />
+
+            <RadioButton
+                android:id="@+id/img_option5"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:button="@drawable/btn_set_off" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/customTextView9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/option6">
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                style="@style/BlackMedium16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_report_option_7" />
+
+            <EditText
+                android:id="@+id/option6"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="내용을 적어주세요"
+                android:textColorHint="@color/text_hint"
+                android:textSize="16dp" />
+
+            <RadioButton
+                android:id="@+id/img_option6"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="24dp"
+                android:button="@drawable/btn_set_off" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/btn_cancel"
+                style="@style/BlackMedium16"
+                android:layout_width="74dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="52dp"
+                android:layout_marginStart="52dp"
+                android:gravity="center"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_cancel"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/customTextView9" />
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/btn_ok"
+                style="@style/BlackMedium16"
+                android:layout_width="74dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginStart="60dp"
+                android:gravity="center"
+                android:onClick="@{commentReport.onClick}"
+                android:text="@string/str_confirm"
+                android:textColor="@color/btn_tv_color"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/btn_cancel" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

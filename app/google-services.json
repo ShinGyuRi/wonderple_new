@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "525004224252",
+    "firebase_url": "https://wonderple-155408.firebaseio.com",
+    "project_id": "wonderple-155408",
+    "storage_bucket": "wonderple-155408.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525004224252:android:36c5f741fb12765f",
+        "android_client_info": {
+          "package_name": "kr.co.easterbunny.wonderple"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525004224252-3j1gos3b937o1ac9ig5i957r0au7e7bl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCnV-AHABxW1UacAhHyjEd8QyYDccra_ko"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

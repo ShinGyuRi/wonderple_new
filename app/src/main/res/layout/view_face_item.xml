@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/layout_root"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/wonder_recyclerview_height"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_tag_item"
+            android:layout_width="@dimen/wonder_item_image_size"
+            android:layout_height="@dimen/wonder_item_image_size"
+            android:layout_marginRight="14dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="14dp" />
+
+        <ImageView
+            android:id="@+id/imgColor"
+            android:layout_width="@dimen/post_detail_recyclerview_tag_item_img_color_size"
+            android:layout_height="@dimen/post_detail_recyclerview_tag_item_img_color_size"
+            android:src="@drawable/posting_tagbox"
+            android:layout_marginRight="0dp"
+            app:layout_constraintRight_toRightOf="@+id/img_tag_item"
+            app:layout_constraintBottom_toBottomOf="@+id/img_tag_item"
+            android:layout_marginBottom="0dp" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

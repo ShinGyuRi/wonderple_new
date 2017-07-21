@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:tag="reveal-left"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/black"
+            android:tag="reveal-right"></RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:tag="front">
+
+            <ImageView
+                android:id="@+id/img_profile"
+                android:layout_width="@dimen/post_detail_content_comment_recyclerview_item_profile_img_size"
+                android:layout_height="@dimen/post_detail_content_comment_recyclerview_item_profile_img_size"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/postting_profile"/>
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/tv_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tv_comment"
+                android:layout_alignStart="@+id/tv_comment"
+                android:layout_alignTop="@+id/img_profile"
+                android:text="username"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                app:customFont="Roboto-Regular"
+                app:layout_constraintLeft_toRightOf="@+id/img_profile"/>
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:id="@+id/tv_before_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv_username"
+                android:layout_alignBottom="@+id/tv_username"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_toEndOf="@+id/tv_username"
+                android:layout_toRightOf="@+id/tv_username"
+                android:text="before day"
+                android:textColor="@color/before_day"
+                android:textSize="12sp"
+                app:customFont="Roboto-Medium"
+                app:layout_constraintLeft_toRightOf="@+id/tv_username"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.github.fobid.linkabletext.widget.LinkableTextView
+                android:id="@+id/tv_comment"
+                android:layout_width="@dimen/post_detail_content_comment_item_text_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="58dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="sans-serif-light"
+                android:text="comment"
+                android:textColor="@color/black"
+                android:textColorLink="@color/link"
+                android:textSize="14sp"
+                app:enabledUnderlines="false"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:linksClickable="false"
+                android:clickable="false"
+                android:contextClickable="false"/>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="@dimen/post_detail_content_comment_item_bottom_line_width"
+                android:layout_height="0.7dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/tv_comment"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="8dp"
+                android:background="@color/disable_text" />
+
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+</layout>

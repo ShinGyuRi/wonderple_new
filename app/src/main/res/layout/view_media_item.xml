@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <kr.co.easterbunny.wonderple.view.SquareFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <kr.co.easterbunny.wonderple.view.SquareImageView
+            android:id="@+id/mMediaThumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"/>
+
+    </kr.co.easterbunny.wonderple.view.SquareFrameLayout>
+</layout>

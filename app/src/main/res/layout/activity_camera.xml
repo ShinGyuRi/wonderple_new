@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/activity_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="kr.co.easterbunny.wonderple.activity.CameraActivity">
+
+
+        <kr.co.easterbunny.wonderple.view.ToolbarView
+            android:id="@+id/mMainToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:elevation="4dp"/>
+
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/mMainTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFF"
+            app:tabIndicatorColor="@color/black"/>
+
+        <kr.co.easterbunny.wonderple.library.util.ui.JinViewPager
+            android:id="@+id/mMainViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/mMainToolbar"
+            android:layout_above="@id/mMainTabLayout"
+            android:orientation="horizontal"/>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,54 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="myPage"
+            type="kr.co.easterbunny.wonderple.fragment.MyPageFragment" />
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="kr.co.easterbunny.wonderple.fragment.MyPageFragment">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/mAppBarContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:elevation="8dp"
+                android:minHeight="@dimen/title_bar_back_height"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <include
+                    android:id="@+id/layout_user_profile"
+                    layout="@layout/content_user_info" />
+
+            </FrameLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+            <!--<fragment-->
+                <!--android:id="@+id/fragment_my_post"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:name="kr.co.easterbunny.wonderple.fragment.MyPostFragment"-->
+                <!--tools:layout="@layout/fragment_my_post"/>-->
+
+
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+</layout>

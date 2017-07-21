@@ -1,0 +1,27 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="kr.co.easterbunny.wonderple.fragment.MyWonderFragment">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_wonder_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:column_count="@integer/grid_column_count"
+            app:item_margin="4dp" />
+
+        <ImageView
+            android:id="@+id/img_no_wonder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wonderplace_nowonders"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="59dp"/>
+
+    </FrameLayout>
+</layout>

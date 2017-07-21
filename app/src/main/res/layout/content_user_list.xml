@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/child_layout_user_list"
+        android:layout_width="@dimen/mention_bg_width"
+        android:layout_height="@dimen/mention_bg_height"
+        android:background="@drawable/metion_box_bg"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_mention_list"
+            android:layout_width="@dimen/mention_user_list_width"
+            android:layout_height="@dimen/mention_user_list_height"
+            android:scrollbars="vertical"
+            android:fadeScrollbars="false"
+            android:scrollbarSize="1dp"
+            android:layout_marginLeft="0dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="0dp" />
+
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

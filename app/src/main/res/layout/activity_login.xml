@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <data>
+        <variable name="login" type="kr.co.easterbunny.wonderple.activity.LoginActivity"/>
+    </data>
+
+
+    <LinearLayout
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/lips_3"
+        tools:context="kr.co.easterbunny.wonderple.activity.LoginActivity">
+
+
+        <ImageView
+            android:layout_width="@dimen/login_logo_width"
+            android:layout_height="@dimen/login_logo_height"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/login_logo_margin_top"
+            android:layout_marginBottom="@dimen/login_logo_margin_bottom"
+            android:src="@drawable/wonderple_logo"/>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/login_btn_margin">
+
+            <ImageView
+                android:id="@+id/btn_kakaoLogin"
+                android:layout_width="@dimen/login_btn_width"
+                android:layout_height="@dimen/login_btn_height"
+                android:background="@drawable/btn_login_kakao"
+                android:onClick="@{login.login}"/>
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_login_btn_kakao"
+                android:textSize="15sp"
+                app:customFont="Roboto-Medium"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/login_btn_text_margin_left"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_facebookLogin"
+                android:layout_width="@dimen/login_btn_width"
+                android:layout_height="@dimen/login_btn_height"
+                android:background="@drawable/btn_login_facebook"
+                android:onClick="@{login.login}"/>
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_login_btn_facebook"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                app:customFont="Roboto-Medium"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/login_btn_text_margin_left"
+                android:layout_marginStart="@dimen/login_btn_text_margin_left" />
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/login_view_margin"
+            android:layout_marginBottom="@dimen/login_view_margin"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="@dimen/login_view_width"
+                android:layout_height="@dimen/login_view_height"
+                android:background="@color/white"
+                android:layout_gravity="center"/>
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/login_str_or_margin"
+                android:layout_marginRight="@dimen/login_str_or_margin"
+                android:textSize="15.3sp"
+                android:textColor="@color/white"
+                android:text="@string/str_or"
+                app:customFont="Roboto-Regular"/>
+
+            <View
+                android:layout_width="@dimen/login_view_width"
+                android:layout_height="@dimen/login_view_height"
+                android:background="@color/white"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/btn_emailLogin"
+                android:layout_width="@dimen/login_btn_width"
+                android:layout_height="@dimen/login_btn_height"
+                android:background="@drawable/btn_login_email"
+                android:onClick="@{login.login}"/>
+
+            <kr.co.easterbunny.wonderple.view.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_login_btn_email"
+                android:textSize="15sp"
+                app:customFont="Roboto-Medium"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="@dimen/login_btn_text_margin_left"
+                android:layout_marginStart="@dimen/login_btn_text_margin_left" />
+
+        </RelativeLayout>
+
+
+
+
+    </LinearLayout>
+
+
+
+</layout>

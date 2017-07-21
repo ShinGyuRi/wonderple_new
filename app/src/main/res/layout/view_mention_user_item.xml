@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mention_user_list_item_height"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/post_detail_content_comment_recyclerview_item_profile_img_size"
+            android:layout_height="@dimen/post_detail_content_comment_recyclerview_item_profile_img_size"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/postting_profile"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <kr.co.easterbunny.wonderple.view.CustomTextView
+            android:id="@+id/tv_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="15dp"
+            android:text="username"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            app:customFont="Roboto-Regular"
+            app:layout_constraintLeft_toRightOf="@+id/img_profile"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

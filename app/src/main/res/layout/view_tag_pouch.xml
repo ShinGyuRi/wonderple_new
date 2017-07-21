@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/tag_pouch_box_height"
+        android:background="@drawable/itemtag_n"
+        android:padding="2dp"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/tag_pouch_box_width"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_tag_item"
+                android:layout_width="@dimen/tag_pouch_image_size"
+                android:layout_height="@dimen/tag_pouch_image_size"
+                android:layout_gravity="center"
+                android:layout_marginTop="22dp" />
+
+            <TextView
+                android:id="@+id/tv_brand_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="18dp"
+                android:fontFamily="sans-serif"
+                android:text="[Brandname]"
+                android:textColor="@color/selected_text"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_item_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="itemName"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:maxLines="2"
+                android:maxWidth="@dimen/tag_pouch_name_width"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="13dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_item_color"
+                android:layout_width="@dimen/tag_pouch_color_size"
+                android:layout_height="@dimen/tag_pouch_color_size"
+                android:background="@drawable/posting_tagbox"
+                android:layout_marginLeft="14dp"/>
+
+            <TextView
+                android:id="@+id/tv_color_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:fontFamily="sans-serif-medium"
+                android:text="colorName"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:textStyle="normal"
+                android:layout_marginLeft="6dp"/>
+        </LinearLayout>
+
+
+        <CheckBox
+            android:id="@+id/btn_select_box"
+            android:layout_width="@dimen/tag_pouch_box_width"
+            android:layout_height="match_parent"
+            android:button="@null"
+            android:checked="false"/>
+
+    </RelativeLayout>
+</layout>
